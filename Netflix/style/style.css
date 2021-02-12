@@ -1,0 +1,289 @@
+:root{
+    --vermelho:#E50914;
+    --preto:#141414;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: transparent;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+section {
+    background-color:transparent;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    z-index: 10;
+    height: 100vh;
+    position:fixed;
+    padding: auto;
+}
+
+
+/* sidebar */
+.sidebar {
+    line-height: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 10vw;
+    padding-top: 80px;
+    transition: all .5s ease;
+}
+
+.sidebar span {
+    position: relative;
+    width: 30vw;
+    height: 100vh;
+    background: transparent;
+    transition: all .5s ease;
+    
+}
+
+.change-my-color {
+    filter: invert(100%) sepia(0%) saturate(7483%) hue-rotate(131deg) brightness(100%) contrast(103%);
+    width: 30px;
+    padding: 5px 10px 0 0;
+  }
+
+.imgPerfil {
+      wrap: wrap;
+}
+
+.imgPerfil img {
+    width: 25px;
+}
+
+.sidebar a {
+    display: block;
+    height: 65px;
+    color: #fff;
+    line-height: 75px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    user-select: none;
+    font-size: 17pt;
+    
+}
+
+.sidebarClick {
+    line-height: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+    line-height: 65px;
+    padding-left: 70px;
+    box-sizing: border-box;
+    font-family: 'Open sans';
+    transition: all 0.8s ease;
+    width: 85vw;
+    background-image: linear-gradient( to right, black, transparent 100%);
+    
+}
+
+
+a.active,a:hover {
+    font-weight: 700;
+}
+
+
+.sidebar .iconPosition {
+    font-size: 23px;
+    margin-left: 40px;
+}
+
+.sidebar .iconClick {
+    margin-right: 26px;
+}
+    
+.sidebar a span {
+    letter-spacing: 1px;
+}
+
+.sidebarLeft {
+    position: absolute;
+    width: 240px;
+    left: -340px;
+    height: 100vh;
+    background: transparent;
+    transition: all .5s ease;
+}
+
+.hoverMenu {
+    position: absolute;
+    width: 240px;
+    left: 0;
+    height: 100vh;
+    
+    transition: all .5s ease;
+}
+
+.settings {
+    margin-top: 50px; 
+}
+
+/* sidebar */
+#poster {
+    width: 100%;
+    background-image: linear-gradient(to right, black, transparent 100%), url(https://www.themoviedb.org/t/p/original/bgQUBbZ14hfeb975yZ2YzTnAwen.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+/* poster */
+
+
+.filme-principal {
+    font-size:16px;
+    height:80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .container {
+    width: 45%;
+    margin-left: 150px;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 20px;
+}
+
+.filme-principal .logo {
+    width: 70px;
+}
+
+.filme-principal .titulo {
+    font-size: 45pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+
+.filme-principal .titulo h3 {
+    margin: 0;
+}
+
+.filme-principal .botoes {
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+    margin-left: 150px;
+}
+
+.filme-principal .botao {
+    display: flex;
+    align-items: center;
+    padding: 17px 28px;
+    color: #fff;
+    text-shadow: 1px 1px #00000025;
+    border: none;
+    border-color: none;
+    background-color: rgba(255, 255, 255, 0.137);
+    margin-right: 10px;
+    border-radius: 3px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .5s ease all;
+}
+
+.filme-principal .botao:hover {
+    background-color: white;
+    color: #111111;
+    filter: none;
+    text-shadow: none;
+}
+
+.filme-principal .botao:hover > img {
+    filter: invert(0%) sepia(5%) saturate(152%) hue-rotate(346deg) brightness(109%) contrast(87%);
+} 
+
+.filme-principal .botao img {
+    width: 15px;
+    margin-right: 10px;
+    filter: invert(100%) sepia(4%) saturate(751%) hue-rotate(247deg) brightness(117%) contrast(100%);
+    shadow: 2px 2px #000000a2;
+}
+
+main .poster {
+    background-color: transparent !important;
+}
+
+/* corrosel */
+
+
+
+.carousel h3 {
+    margin-left: 150px;
+    font-size: 18pt;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-series {
+    margin-left: 150px;
+}
+
+.carrosel-series .item img {
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+.carrosel-series .item img:hover {
+    transform: scale(1.05);
+    transition: .5s ease all;
+}
+
+.box {
+    width: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+    
+
+}
+
+.slide-img {
+    height: 450px;
+
+}
+
+.slide-img .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+
+}
